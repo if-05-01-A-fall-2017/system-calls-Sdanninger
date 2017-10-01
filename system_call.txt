@@ -1,0 +1,64 @@
+fork 
+
+create a child procces from that current one that is identic.
+
+fail: all pid are forgiven.
+===============================================================
+stat
+
+return information from a file
+
+pathname: name of the file from which you get the information
+buf: where the information shoul be printed
+
+===============================================================
+kill
+
+kill a process
+
+pid: pid from the process which you want to kill
+sig: signal which should be send to the process with the specific pid
+
+fail: invalid sig was given.
+===============================================================
+mmap
+
+create a new virtual space for mapping
+
+addr: starting addres
+length: length of the virtual space
+prot: is the protection level of the space
+flags: which updates are visiable by other process
+fd: file which is protected
+offset: offset of the protected space
+===============================================================
+chmod
+
+changes the mode of the file specified whose pathname is given.
+
+pathname: path
+mode: bit mask
+
+fail: search permisson on pathname is not given.
+===============================================================
+waitpid
+
+wait for a change of mode from a child process
+
+wstatus: status what should happend after change of child process
+===============================================================
+exec
+
+fail: all of these function may fail and set errno for any of the error.
+===============================================================
+unlink
+
+fail: write acces of the file is not given.
+===============================================================
+read
+
+fail: there is no file
+===============================================================
+mount
+
+fail: a component of the path was not searchable.
